@@ -1,0 +1,226 @@
+body{
+	 background-image: url("phar5.jpg");
+	 background-repeat: repeat-x; /* To not repeat the background image */
+	 background-attachment: fixed; /* To make the background image fixed on the screen */
+	 font-family: 'Playfair Display', serif;
+}
+/* navigation bar */
+
+#TopOne {
+    float: left;
+    width: 85%;
+    height: 7%;
+    margin: 0px 65px;
+    background-color: #E5E4E2;
+    border-radius: 4px;
+    overflow: hidden;
+    box-shadow: 0 0 5px rgba(0,0,0,0.3);
+    position: absolute;
+    top: 10px;
+    left: 40px;
+    padding: 17px;
+}
+
+#navigation-bar ul {
+    margin: -30px;
+    padding: 0;
+    list-style: none;
+    width: 100%;
+    border-radius: 4px;
+    overflow: hidden;
+}
+
+#navigation-bar li {
+    float: left;
+    padding: 0;
+    margin: 0;
+    width: 20%;
+}
+
+#navigation-bar a {
+    color: #3BB9FF;
+    font-size: 20px;
+    text-decoration: none;
+    text-align: center;
+    width: 100%;
+    padding: 20px 0;
+    display: block;
+    position: relative;
+    transition: all 0.3s ease;
+}
+
+    #navigation-bar a:hover {
+        color: black;
+    }
+    /*  #navigation-bar li:first-child a {border-radius:4px 0 0 4px;}
+#navigation-bar li:last-child a {border-radius:0 4px 4px 0;}  */
+    #navigation-bar a:before {
+        content: '';
+        transition: all .4s ease-in-out;
+        position: absolute;
+        right: 50%;
+        left: 50%;
+        bottom: 0;
+        display: block;
+        height: 2px;
+        background-color: #e74c3c;
+    }
+
+    #navigation-bar li:hover a:before, #navigation-bar a:hover:before {
+        right: 0;
+        left: 0;
+    }
+
+#navigation-bar span {
+    display: block;
+}
+
+/*end navbar*/
+ /* start result*/
+.sub-div1 {
+    background: white;
+    position: relative;
+    display: block;
+    color: cornflowerblue;
+   bottom:500px;
+    width: 50%;
+    height: 300px;
+    left: 100px;
+    font-size: 20px;
+    font-weight: bold;
+    text-align: left;
+    border-radius: 45px;
+	 box-shadow: 5px 10px 10px rgba(0, 0, 0, 0.5);
+
+}
+.sub-div2 {
+    background: white;
+    position: relative;
+    display: block;
+    color: cornflowerblue;
+    bottom: 450px;
+    width: 50%;
+    height: 300px;
+    left: 100px;
+    font-size: 20px;
+    font-weight: bold;
+    text-align: left;
+    border-radius: 45px;
+	 box-shadow: 5px 10px 10px rgba(0, 0, 0, 0.5);
+}
+.sub-div3 {
+    background: white;
+    position: relative;
+    display: block;
+    color: cornflowerblue;
+    bottom: 400px;
+    width: 50%;
+    height: 300px;
+    left: 100px;
+    font-size: 20px;
+    font-weight: bold;
+    text-align: left;
+    border-radius: 45px;
+	 box-shadow: 5px 10px 10px rgba(0, 0, 0, 0.5);
+}
+ .pharname{
+     width:20px;
+     height:20px;
+     position:relative;
+     left:20px;
+     top:20px;
+ }
+ .p1{
+     position:relative;
+     left:50px;
+     top:65px;
+ }
+
+ .p2 {
+     position:relative;
+     top:60px;
+     left:50px;
+
+ }
+ .p3{
+   position:relative;
+   top:55px;
+   left:50px;
+ }
+ 
+ .p4{
+	 position:relative;
+	 top:50px;
+	 left:50px;
+ }
+  .p5{
+	 position:relative;
+	 top:45px;
+	 left:50px;
+ }
+ 
+  .p6{
+	 position:relative;
+	 top:30px;
+	 left:50px;
+ }
+ 
+
+ 
+  .hotline{
+     width:20px;
+     height:20px;
+     position:relative;
+     left:20px;
+     top:20px;
+ }
+ 
+ 
+
+
+ 
+ .email{
+	      width:20px;
+     height:20px;
+     position:relative;
+     left:20px;
+     top:20px;
+ }
+.workinghours {
+      width:20px;
+     height:20px;
+     position:relative;
+     left:20px;
+     top:20px;
+ }
+ 
+ .workingdays {
+      width:20px;
+     height:20px;
+     position:relative;
+     left:20px;
+     top:20px;
+ }
+ 
+ .branches{
+      width:20px;
+     height:20px;
+     position:relative;
+     left:20px;
+     top:20px;
+ }
+ 
+
+ 
+.ads {
+    border-radius: 25px;
+    border: 2px solid midnightblue;
+    padding: 20px;
+    width: 300px;
+    height: 700px;
+    position:relative;
+    top:300px;
+    left:900px;
+    text-align:center;
+	 box-shadow: 5px 10px 10px rgba(0, 0, 0, 0.5);
+}

@@ -1,0 +1,325 @@
+
+@import "https://fonts.googleapis.com/css?family=Oswald:400,700";
+
+body {
+    
+    background-attachment: fixed;
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    font-family: 'Oswald', sans-serif;
+    letter-spacing: 1px;
+    transform: scale(0.60);
+    transform-origin: 1 0;
+}
+
+
+
+.htext {
+    font: 200 50px/1 Fascinate;
+    text-transform: uppercase;
+    color: #005a97;
+    text-align: center;
+    letter-spacing: -3px;
+    padding-top: 5%;
+}
+
+h2 {
+    position: center;
+    margin-top: -550px;
+    text-align: center;
+    font-size: 4em;
+    width: 100%;
+    font-weight: 600;
+
+    text-shadow: 0 1px 0 hsl(174,5%,80%), 0 2px 0 hsl(174,5%,75%), 0 3px 0 hsl(174,5%,70%), 0 4px 0 hsl(174,5%,66%), 0 5px 0 hsl(174,5%,64%), 0 6px 0 hsl(174,5%,62%), 0 7px 0 hsl(174,5%,61%), 0 8px 0 hsl(174,5%,60%), 0 0 5px rgba(0,0,0,.05), 0 1px 3px rgba(0,0,0,.2), 0 3px 5px rgba(0,0,0,.2), 0 5px 10px rgba(0,0,0,.2), 0 10px 10px rgba(0,0,0,.2), 0 20px 20px rgba(0,0,0,.3);
+}
+
+
+@import url(https://fonts.googleapis.com/css?family=Khula:700);
+
+
+
+.hidden {
+    opacity: 0;
+}
+
+.console-container {
+    font-family: Cousine;
+    font-size: 4em;
+    text-align: center;
+    height: 200px;
+    width: 750px;
+    display: block;
+    position: center;
+    color: #005a97;
+    font-weight: 500;
+    
+    margin-left:350px;
+    margin-top:10px;
+    
+}
+
+.console-underscore {
+    display: inline-block;
+    position: relative;
+    top: -0.14em;
+    left: 10px;
+}
+
+
+
+
+
+
+
+
+
+
+
+/**start of dropdown/**/
+
+.drop1 {
+    background-color: white;
+    color: cornflowerblue;
+    padding: 32px;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+    
+    min-width: 100px;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    position:relative;
+    top: 60px;
+   
+    left: 400px;
+    font-weight: bold;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 26px;
+    border: 2px solid cornflowerblue;
+    border-radius: 10px;
+    margin-top:20px;
+     padding-left:20px;
+}
+
+
+    /* Dropdown button on hover & focus */
+
+    .drop1:hover,
+    .drop1:focus {
+        background-color: whitesmoke;
+    }
+
+
+/* The container <div> - needed to position the dropdown content */
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.searchinput {
+    font-family: "Open Sans";
+    min-width: 300px;
+    position: relative;
+    left: 400px;
+    
+    top: 60px;
+    font-weight: bold;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 20px;
+    color: cornflowerblue;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    outline: none;
+    display: inline-block;
+    border: 2px solid cornflowerblue;
+    border-radius: 10px;
+}
+
+.searchbutton {
+    height: 100px;
+    width: 145px;
+    border: none;
+    font-size: 26px;
+    color: white;
+    background: cornflowerblue;
+    border-radius: 2px;
+    cursor: pointer;
+    -webkit-transition: all ease 0.8s;
+    -moz-transition: all ease 0.8s;
+    transition: all ease 0.8s;
+    position: relative;
+    left: 400px;
+    top: 62px;
+    
+    border: 2px solid cornflowerblue;
+    border-radius: 10px;
+}
+
+    .searchbutton:hover {
+        box-shadow: inset 150px 0 0 0 #e84b3a;
+    }
+
+    .searchbutton:active,
+    button:focus {
+        background: #649eff;
+    }
+
+nav {
+    position: relative;
+    right: 10px;
+    bottom: 30px;
+}
+
+/**end color-profile dropdown/**/
+
+
+
+
+
+
+
+
+
+#TopOne {
+    float: left;
+    width: 90%;
+    height: 5%;
+    margin-top:-580px;
+    background-color: white;
+    border-radius: 4px;
+    overflow: hidden;
+    box-shadow: 0 0 5px rgba(0,0,0,0.3);
+    position: absolute;
+    top: 0px;
+    left: 40px;
+    padding: 0px;
+}
+
+#navigation-bar ul {
+    margin: -30px;
+    padding: 0;
+    list-style: none;
+    width: 100%;
+    border-radius: 4px;
+    overflow: hidden;
+}
+
+#navigation-bar li {
+    float: left;
+    padding: 0;
+    margin: 0;
+    width: 20%;
+}
+
+#navigation-bar a {
+    color: #3d3dbb;
+  
+    font-size: 20px;
+    text-decoration: none;
+    text-align: center;
+    width: 100%;
+    padding: 45px 0;
+    display: block;
+    position: relative;
+    transition: all 0.3s ease;
+}
+
+    #navigation-bar a:hover {
+        color: black;
+    }
+    /*  #navigation-bar li:first-child a {border-radius:4px 0 0 4px;}
+#navigation-bar li:last-child a {border-radius:0 4px 4px 0;}  */
+    #navigation-bar a:before {
+        content: '';
+        transition: all .4s ease-in-out;
+        position: absolute;
+        right: 50%;
+        left: 50%;
+        bottom: 0;
+        display: block;
+        height: 2px;
+        background-color: #e74c3c;
+    }
+
+    #navigation-bar li:hover a:before, #navigation-bar a:hover:before {
+        right: 0;
+        left: 0;
+    }
+
+#navigation-bar span {
+    display: block;
+}
+
+
+
+* {
+    box-sizing: border-box;
+}
+
+
+
+a{
+    border-radius:5px;
+    margin-right:200px;
+
+}
+
+
+p {
+    font-size: 4em;
+    color: #0f7986;
+}
+
+
+
+
+
+
+h1 {
+    font-family: Aldrich;
+    font-size: 5em;
+    font-weight: 500;
+    position: relative;
+    color: #005a97;
+    padding-right: 500px;
+}
+
+.ranking {
+    
+    position:relative;
+    padding-bottom: 5px;
+    padding-top:100px;
+    padding-left:850px;
+}
+
+#trial {
+    width: 100%;
+    max-width:800px;
+    margin-top:350px;
+    margin-left:15px;
+    padding: 0;
+    position:center;
+    padding-top:100px;
+    
+}
+
+svg {
+    width: 100%;
+    height: 100%;
+}
+
+#pulsar {
+    stroke-dasharray: 281;
+    -webkit-animation: dash 2.5s infinite linear forwards;
+    color: #E3E3E3;
+}
+
+@-webkit-keyframes dash {
+    from {
+        stroke-dashoffset: 814;
+    }
+
+    to {
+        stroke-dashoffset: -814;
+    }
+}

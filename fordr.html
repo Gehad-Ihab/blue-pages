@@ -1,0 +1,182 @@
+<!DOC TYPE HTML> 
+<html> 
+<head>
+<meta charset="UTF-8"/>
+<html lang="en"> 
+<meta name="description" content="> 
+<meta name="keywords">
+<meta http-equiv="refresh" content="120"> 
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>for doctor</title> 
+<link rel="stylesheet" href="css/bootstrap.css"/> 
+<link rel="stylesheet" href="css/font-awesome.min.css"/> 
+<link href="css/hover.css" rel="stylesheet" media="all">
+<link rel="stylesheet" href="css/fordr.css"/>
+    <script src="js/html5shiv.min.js"></script>  
+      <script src="js/respond.min.js"></script>  
+     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.0/jquery.min.js"></script>
+	   <link href='http://fonts.googleapis.com/css?family=Raleway' rel='stylesheet' type='text/css'>
+	<link href="https://fonts.googleapis.com/css?family=Fredoka+One" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Abril+Fatface" rel="stylesheet">
+   
+</head>
+<body>
+	<div class="nav-wrap">   
+  <ul class="group" id="fancy-nav">
+      <li class="current_page_item_two"><a href="Home Page.html">Home</a></li>
+      <li><a href="fordr.html">For Doctors</a></li>
+      <li><a href="profile.html">User Account</a></li>
+      <li><a href="form reg.html">Register</a></li>
+      <li><a href="signinforms.html">Sign In</a></li>
+	  <li><a href="Home Page.html">Sign Out</a></li>
+	  <li><a href="Sitemap.html">Sitemap</a></li>
+  </ul> 
+</div>
+	
+	  <div class="sub-menu">
+    <span class="sub-menu-circle"></span>
+    <a href="#" class="sub-menu-link">
+        <span class="sub-menu-icon">
+     <h1 class="hh1">Menu</h1>
+        </span>
+    </a>
+</div>
+<div class="sub-menu-overlay">
+    <ul class="sub-menu-list">
+        <li><a href="newclinics.html">Clinic </a></li> 
+        <li><a href=""> Hospitals</a></li>
+        <li><a href="pharmacy-new.html">pharamcy</a></li>
+        <li><a href="labs&radiology.html">Labs and Radiology </a></li>
+        <li><a href="secbb.html"> blood bank</a></li> 
+        <li><a href="amb.html"> Ambulance</a></li>
+    </ul>
+</div>
+<a href="Home Page.html"><img class="logo22" src="bbt.png" height="100" width="100"></a>
+
+
+
+	<div class="im"> 
+<img src="d1.jpg" height="500" width="300" alt="img">
+</div>
+
+
+<div class=talkbubble>
+	<h1> Join US</h1>
+	<h3> Keep the treatment On <span>You</span> .. and Your Marketing on <span>Us</span> </h3>
+	
+	 <form class="form2" action="/action_page.php">
+  <br>
+    <label  for="cname"><img src="cn.png"></label>
+    <input  type="text" id="clinic Name" name="clinic Name" placeholder="clinicName..">
+
+    <label for="Dname"><img src="doctor.png"></label>
+    <input type="text" id="Doctor name" name="Dr name" placeholder="Doctor Name..">
+		
+   <label for="cphone"><img src="cph.png"></label>
+    <input type="text" id="Clinic Phone" name="Clinic Phone" placeholder="Clinic Phone..">
+   <br><br>
+	  <label for="clocation"><img src="clo.png"></label>
+    <input type="text" id="location" name="location" placeholder="clinic Location..">
+   
+    <label for="certifications"><img src="cert.png"></label>
+    <input type="text" id="certifications" name="certifications" placeholder="certifications..">
+		
+		         <label for="Specification"><img src="list.png"></label>
+    <input type="text" id="Specification" name="Specification" placeholder="Specification..">
+
+    <br><br>
+	
+		<label for="Fees"><img src="amph.png"></label>
+    <input type="text" id="Fees" name="Fees" placeholder="Fees..">
+		
+   <label for="Working Hours"><img src="hours.png"></label>
+    <input type="text" id="Working Hours" name="Working Hours" placeholder="Working Hours..">
+
+   <label for="working Days"><img src="days.png"></label>
+    <input type="text" id="working Days" name="working Days" placeholder="working Days..">
+  <br><br>
+    <input type="submit" value="Submit">
+  </form>
+	
+</div>
+
+<script>
+    
+    $(function() {  
+  $(".sub-menu-link").click(function(e) {
+    e.preventDefault();    
+    $(".sub-menu-overlay").toggleClass("open");
+    $(".sub-menu").toggleClass("open");
+  });	
+});
+</script>
+
+<script>
+		// https://css-tricks.com/jquery-magicline-navigation/
+// https://css-tricks.com/examples/MagicLine/
+// Tried to isolate an issue posted on the css-tricks.com/forums -> https://css-tricks.com/forums/discussion/24993/help-with-jquery-magicline-navigation
+$(function() {
+
+    var $el, leftPos, newWidth;
+        $mainNav2 = $("#fancy-nav");
+     
+    /*
+        EXAMPLE TWO
+    */
+    
+    $mainNav2.append("<li id='magic-line-two'></li>");
+    
+    var $magicLineTwo = $("#magic-line-two");
+    
+    $magicLineTwo
+        .width($(".current_page_item_two").width())
+        .height($mainNav2.height())
+        .css("left", $(".current_page_item_two a").position().left)
+        .data("origLeft", $(".current_page_item_two a").position().left)
+        .data("origWidth", $magicLineTwo.width())
+        .data("origColor", $(".current_page_item_two a").attr("rel"));
+                
+    $("#fancy-nav a").hover(function() {
+        $el = $(this);
+        leftPos = $el.position().left;
+        newWidth = $el.parent().width();
+        $magicLineTwo.stop().animate({
+            left: leftPos,
+            width: newWidth,
+            backgroundColor: $el.attr("rel")
+        })
+    }, function() {
+        $magicLineTwo.stop().animate({
+            left: $magicLineTwo.data("origLeft"),
+            width: $magicLineTwo.data("origWidth")
+        });    
+    });
+    
+    /* Kick IE into gear */
+    $(".current_page_item_two a").mouseenter();
+    
+}); 
+	</script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</body>
+</html>

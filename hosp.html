@@ -1,0 +1,184 @@
+
+
+<!DOCTYPE html>
+
+<head>
+      <meta charset="utf-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width,intial-scale=1"/>
+    <script src="Scripts/jquery-1.9.1.min.js"></script>
+   <script src="Scripts/bootstrap.min.js"></script>
+    <link href="Content/bootstrap.min.css" rel="stylesheet" />
+    <link href="Content/bootstrap-theme.min.css" rel="stylesheet"/>
+    <meta name="description" content="/>
+    <meta name="keywords"/>
+    <link href="css/hover.css" rel="stylesheet" media="all"/>
+    <link href="css/hosp.css" rel="stylesheet" type="text/css" />
+     <script src="Scripts/html5shiv.js"></script>
+    <script src="Scripts/respond.js"></script>
+    <link href='https://fonts.googleapis.com/css?family=Fascinate 'rel="stylesheet"/>
+    <link href='https://fonts.googleapis.com/css?family=Cousine' rel="stylesheet"/>
+    <link href='https://fonts.googleapis.com/css?family=Aldrich' rel="stylesheet"/>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.0/jquery.min.js"></script> 
+ 
+    <title>Hospital</title>
+</head>
+<body>
+   
+    <div id="TopOne">
+  <div id='navigation-bar'>
+    <ul>
+     
+      <li class='menu-sub-nav'><a href='fordr.html'><i class="fa fa-user-md" aria-hidden="true"></i><span>For Doctors</span></a></li>
+      <li class='menu-sub-nav'><a href='profile.html'><i class='fa fa-user'></i><span>User Account</span></a></li>
+      <li class='menu-sub-nav'><a href='form reg.html'><i class="fa fa-registered" aria-hidden="true"></i><span>Register</span></a></li>
+     <li class='menu-sub-nav'><a href='signinforms.html'><i class="fa fa-sign-in" aria-hidden="true"></i><span>Sign In</span></a></li>
+      <li class='menu-sub-nav'><a href='bgrb.html'><i class="fa fa-sign-out" aria-hidden="true"></i><span>Log Out</span></a></li>
+     
+    </ul> </div></div>
+    <!--end nav bar-->
+   <form id="form1" runat="server" >
+
+
+    
+       <div class="htext">
+           <h2>Hospitals</h2>
+
+       
+
+</div>
+
+       <div class='console-container'>
+           <span id='text'></span>
+           <div class='console-underscore' id='console'>&#95;</div>
+
+       </div>
+
+
+
+
+
+
+
+
+
+       <!-- begining of dropdown-->
+     <nav>
+   <div id="nav">
+        
+          <div id="navLeft">
+            <div class="dropdown">
+                <asp:DropDownList runat="server" ID="ddCity" CssClass="drop1" AutoPostBack="True" OnSelectedIndexChanged="ddCity_SelectedIndexChanged" >
+                    <asp:ListItem> Choose City</asp:ListItem>
+                </asp:DropDownList>
+                <asp:DropDownList runat="server" ID="ddArea" CssClass="drop1" AutoPostBack="True">
+                    <asp:ListItem> Choose Area </asp:ListItem>
+                </asp:DropDownList>
+                
+                <asp:Button runat="server" CssClass="searchbutton" Text="Search" ID="srchbtn" OnClick="srchbtn_Click" />
+                </div>
+                </div>
+       </div>
+        </nav>
+    </form>
+
+
+ 
+    
+    
+
+
+<div id="trial">
+    <a href="ICU.aspx">
+           <p> <img src="patient.png" align="left" />* Tips For  ICU </p>
+        </a>
+
+  <svg version="1.2" height="300" width="600" xmlns="http://www.w3.org/2000/svg"
+    viewport="0 0 60 60" xmlns:xlink="http://www.w3.org/1999/xlink">
+
+    <path stroke="rgba(15,0,0,0.1)" fill="none" stroke-width="1" stroke-linejoin="round"
+          d="
+            M0,90L250,90Q257,60 262,87T267,95 270,88 273,92t6,35 7,-60T290,127 297,107s2,-11 10,-10 1,1 8,-10T319,95c6,4 8,-6 10,-17s2,10 9,11h210" />   
+    
+    <path  id="pulsar"stroke="rgba(0,155,155,1)" fill="none" stroke-width="1"stroke-linejoin="round"
+          d="
+            M0,90L250,90Q257,60 262,87T267,95 270,88 273,92t6,35 7,-60T290,127 297,107s2,-11 10,-10 1,1 8,-10T319,95c6,4 8,-6 10,-17s2,10 9,11h210" /> 
+     
+</svg>
+</div>
+
+        <div class="ranking">
+      <h1><b>Best 3 hospitals </b> </h1>
+            <img src="FotoJet (4).png" width="" height="" />
+
+        </div>
+        <br/>
+        
+           
+    
+    <script>
+        $('.ribbon').on('click', function () {
+            var self = $(this),
+                newone = self.clone(true);
+
+            self.before(newone);
+            $("." + self.attr("class") + ":last").remove();
+        });
+    </script>
+
+
+
+    <script>
+        consoleText(['Hello User :) .', 'This is your Hospital guide '], 'text', ['#005a97', '#005a97']);
+
+        function consoleText(words, id, colors) {
+            if (colors === undefined) colors = ['#005a97'];
+            var visible = true;
+            var con = document.getElementById('console');
+            var letterCount = 1;
+            var x = 1;
+            var waiting = false;
+            var target = document.getElementById(id)
+            target.setAttribute('style', 'color:' + colors[0])
+            window.setInterval(function () {
+
+                if (letterCount === 0 && waiting === false) {
+                    waiting = true;
+                    target.innerHTML = words[0].substring(0, letterCount)
+                    window.setTimeout(function () {
+                        var usedColor = colors.shift();
+                        colors.push(usedColor);
+                        var usedWord = words.shift();
+                        words.push(usedWord);
+                        x = 1;
+                        target.setAttribute('style', 'color:' + colors[0])
+                        letterCount += x;
+                        waiting = false;
+                    }, 1000)
+                } else if (letterCount === words[0].length + 1 && waiting === false) {
+                    waiting = true;
+                    window.setTimeout(function () {
+                        x = -1;
+                        letterCount += x;
+                        waiting = false;
+                    }, 1000)
+                } else if (waiting === false) {
+                    target.innerHTML = words[0].substring(0, letterCount)
+                    letterCount += x;
+                }
+            }, 120)
+            window.setInterval(function () {
+                if (visible === true) {
+                    con.className = 'console-underscore hidden'
+                    visible = false;
+
+                } else {
+                    con.className = 'console-underscore'
+
+                    visible = true;
+                }
+            }, 400)
+        }
+    </script>
+    

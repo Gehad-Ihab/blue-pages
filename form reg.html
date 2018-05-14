@@ -1,0 +1,181 @@
+<!DOC TYPE HTML> 
+<html> 
+<head>
+<meta charset="UTF-8"/>
+<html lang="en"> 
+<meta name="description" content="> 
+<meta name="keywords">
+<meta http-equiv="refresh" content="120"> 
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title> signup form </title> 
+<link rel="stylesheet" href="css/bootstrap.css"/> 
+<link rel="stylesheet" href="css/font-awesome.min.css"/> 
+<link href="css/hover.css" rel="stylesheet" media="all">
+<link rel="stylesheet" href="css/regform.css"/>
+    <script src="js/html5shiv.min.js"></script>  
+      <script src="js/respond.min.js"></script>  
+     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.0/jquery.min.js"></script>
+	  <link href='http://fonts.googleapis.com/css?family=Raleway' rel='stylesheet' type='text/css'>
+	<link href="https://fonts.googleapis.com/css?family=Fredoka+One" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Abril+Fatface" rel="stylesheet"> 
+   
+</head>
+<body>
+
+	<div class="nav-wrap">   
+  <ul class="group" id="fancy-nav">
+      <li class="current_page_item_two"><a href="Home Page.html">Home</a></li>
+      <li><a href="fordr.html">For Doctors</a></li>
+      <li><a href="profile.html">User Account</a></li>
+      <li><a href="form reg.html">Register</a></li>
+      <li><a href="signinforms.html">Sign In</a></li>
+	  <li><a href="Home Page.html">Sign Out</a></li>
+	  <li><a href="Sitemap.html">Sitemap</a></li>
+  </ul> 
+</div>
+	
+	  <div class="sub-menu">
+    <span class="sub-menu-circle"></span>
+    <a href="#" class="sub-menu-link">
+        <span class="sub-menu-icon">
+     <h1 class="hh1">Menu</h1>
+        </span>
+    </a>
+</div>
+<div class="sub-menu-overlay">
+    <ul class="sub-menu-list">
+        <li><a href="newclinics.html">Clinic </a></li> 
+        <li><a href=""> Hospitals</a></li>
+        <li><a href="pharmacy-new.html">pharamcy</a></li>
+        <li><a href="labs&radiology.html">Labs and Radiology </a></li>
+        <li><a href="secbb.html"> blood bank</a></li> 
+        <li><a href="amb.html"> Ambulance</a></li>
+    </ul>
+</div>
+<a href="Home Page.html"><img class="logo22" src="bbt.png" height="100" width="100"></a>
+
+
+<div class="im"> 
+<img class="hvr-wobble-to-bottom-right" src="heart.png" height="200"width="850" alt="img">
+<h1>Join Us</h1>
+<h2>We Are Here Always</h2>
+</div>
+
+
+  
+  
+<div class="circle1">
+<h4 align="center"> <ins>step<img src="s1.png"></ins> </h4>
+<form  class="f1" action="/action_page.php">
+    <label for="Fname"><img src="fn.png" height="30" width="30"></label>
+    <input type="text" id="fname" name="firstname" placeholder="First Name...">
+	<br><br>
+<label for="Lname"><img src="fn.png" height="30" width="30"></label>
+    <input type="text" id="lname" name="locatin" placeholder="Last Name...">
+	<br><br>
+<label for="Username"><img src="us.png" height="30" width="30"></label>
+    <input type="text" id="username" name="user name " placeholder="User Name...">
+		<br><br>
+<label for="upassword"><img src="pw.png" height="30" width="30"></label>
+    <input type="password" id="password" name="password" placeholder="Password..." ><br>
+	<label for="Email"><img src="email.png" height="30" width="30"></label>
+    <input type="text" id="Email" name="Email " placeholder="Your Email...">
+	
+
+		<br><br>
+  </form>
+</div>
+
+<div class="circle2">
+<h6 align="center"> <ins>step<img src="s3.png"></ins> </h6>
+<h3 align="center"> Now You Are Done...! </h3>
+<form align="center">
+<input class="hvr-pulse-grow" type="submit" value="Submit">
+  </form>
+
+
+</div>
+
+<div class="circle">
+<h4 align="center"> <ins>step<img src="s2.png"></ins> </h4>
+<form action="/action_page.php" style="margin-left: 130px;">
+
+<label for="uaddress"><img src="ad3.png" height="30" width="30"></label>
+   <input type="text" id="address" name="address" placeholder="Your Address..."><br>
+     <label for="area"><img src="ad2.png" height="30" width="30"></label>
+ <input type="text" id="address" name="address" placeholder="Your area..."><br>
+       <label for="city"><img src="ad2.png" height="30" width="30"></label>
+ <input type="text" id="address" name="address" placeholder="Your country..."><br> 
+    <label for="Age"><img src="ag.png" height="30" width="30"></label>
+    <input type="text" id="Age" name="Age" placeholder="Your Age...">
+	<br>
+<label for="Phone"><img src="pho.png" height="30" width="30"></label>
+    <input type="text" id="Phone" name="Phone" placeholder="Phone Number...">
+	<br><br>
+
+		 	<label for="Gender"><img src="ge.png" height="30" width="30"></label>
+     <input type="radio" name="gender" value="male" checked> Male
+  <input type="radio" name="gender" value="female"> Female
+  
+  </div>
+  <script>
+    
+    $(function() {  
+  $(".sub-menu-link").click(function(e) {
+    e.preventDefault();    
+    $(".sub-menu-overlay").toggleClass("open");
+    $(".sub-menu").toggleClass("open");
+  });	
+});
+</script>
+
+<script>
+		// https://css-tricks.com/jquery-magicline-navigation/
+// https://css-tricks.com/examples/MagicLine/
+// Tried to isolate an issue posted on the css-tricks.com/forums -> https://css-tricks.com/forums/discussion/24993/help-with-jquery-magicline-navigation
+$(function() {
+
+    var $el, leftPos, newWidth;
+        $mainNav2 = $("#fancy-nav");
+     
+    /*
+        EXAMPLE TWO
+    */
+    
+    $mainNav2.append("<li id='magic-line-two'></li>");
+    
+    var $magicLineTwo = $("#magic-line-two");
+    
+    $magicLineTwo
+        .width($(".current_page_item_two").width())
+        .height($mainNav2.height())
+        .css("left", $(".current_page_item_two a").position().left)
+        .data("origLeft", $(".current_page_item_two a").position().left)
+        .data("origWidth", $magicLineTwo.width())
+        .data("origColor", $(".current_page_item_two a").attr("rel"));
+                
+    $("#fancy-nav a").hover(function() {
+        $el = $(this);
+        leftPos = $el.position().left;
+        newWidth = $el.parent().width();
+        $magicLineTwo.stop().animate({
+            left: leftPos,
+            width: newWidth,
+            backgroundColor: $el.attr("rel")
+        })
+    }, function() {
+        $magicLineTwo.stop().animate({
+            left: $magicLineTwo.data("origLeft"),
+            width: $magicLineTwo.data("origWidth")
+        });    
+    });
+    
+    /* Kick IE into gear */
+    $(".current_page_item_two a").mouseenter();
+    
+}); 
+	</script>
+  
+
+</body>
+</html>

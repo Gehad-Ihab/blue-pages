@@ -1,0 +1,56 @@
+<!DOC TYPE HTML> 
+<html> 
+<head>
+<meta charset="UTF-8"/>
+<html lang="en"> 
+<meta name="description" content="> 
+<meta name="keywords">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+<title> HomePage </title> 
+<link rel="stylesheet" href="css/bootstrap.css"/> 
+<link rel="stylesheet" href="css/font-awesome.min.css"/> 
+<link href="css/hover.css" rel="stylesheet" media="all">
+<link rel="stylesheet" href="css/hp.css"/>
+<link href='http://fonts.googleapis.com/css?family=Ubuntu' rel='stylesheet' type='text/css'/>
+<script src="js/html5shiv.min.js"></script>  
+<script src="js/respond.min.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.0/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+			
+</head>
+<body >
+	
+   <div id='menu-nav'>
+  <div id='navigation-bar'>
+    <ul>
+      <li class='menu-sub-nav current-item'><a href='/'><img src="nb1.png" height="40" width="40"><span>Home</span></a></li>
+      <li class='menu-sub-nav'><a href='#'><img src="nb1.png" height="40" width="40"><span>Widgets</span></a></li>
+      <li class='menu-sub-nav'><a href='#'><img src="nb1.png" height="40" width="40"><span>About</span></a></li>
+      <li class='menu-sub-nav'><a href='#'><img src="nb1.png" height="40" width="40"><span>Contact</span></a></li>
+      <li class='menu-sub-nav' id='searchbox'><a href='#' ><img src="nb1.png" height="40" width="40"><span>Search</span></a></li>
+    </ul><img src="nb1.png">
+  </div>
+  <div id='search-bar'>
+    <form action='nothing'>
+      <input type='text' name='search' id='searchfld' placeholder='Enter your query and hit enter'/>
+    </form>
+  </div>
+</div>
+
+	
+<script>
+	$(function() {
+  hideandshow($("#searchbox"),$("#search-bar"),300);
+});
+
+function hideandshow(e,n,a) {
+  var c=!1;
+  e.click(function(e) {
+    c?n.slideUp(a):n.slideDown(a);
+    c=!c;
+    e.preventDefault();
+  })
+}
+</script>

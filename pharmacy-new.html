@@ -1,0 +1,370 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Pharmacy</title>
+<link rel="stylesheet" href="css/pharmacy-new.css"/> 
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+<script src="F:\level 4/graduation project/project/js/bootstrap.min"></script>
+<script src="js/html5shiv.min.js"></script>  
+<script src="js/respond.min.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.0/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+	<link href='http://fonts.googleapis.com/css?family=Raleway' rel='stylesheet' type='text/css'>
+	<link href="https://fonts.googleapis.com/css?family=Fredoka+One" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Abril+Fatface" rel="stylesheet">
+</head>
+<body>
+<div class="nav-wrap">   
+  <ul class="group" id="fancy-nav">
+      <li class="current_page_item_two"><a href="Home Page.html">Home</a></li>
+      <li><a href="fordr.html">For Doctors</a></li>
+      <li><a href="profile.html">User Account</a></li>
+      <li><a href="form reg.html">Register</a></li>
+      <li><a href="signinforms.html">Sign In</a></li>
+	  <li><a href="Home Page.html">Sign Out</a></li>
+	  <li><a href="Sitemap.html">Sitemap</a></li>
+  </ul> 
+</div>
+	
+	  <div class="sub-menu">
+    <span class="sub-menu-circle"></span>
+    <a href="#" class="sub-menu-link">
+        <span class="sub-menu-icon">
+     <h1 class="hh1">Menu</h1>
+        </span>
+    </a>
+</div>
+<div class="sub-menu-overlay">
+    <ul class="sub-menu-list">
+        <li><a href="newclinics.html">Clinic </a></li> 
+        <li><a href=""> Hospitals</a></li>
+        <li><a href="pharmacy-new.html">pharamcy</a></li>
+        <li><a href="labs&radiology.html">Labs and Radiology </a></li>
+        <li><a href="secbb.html"> blood bank</a></li> 
+        <li><a href="amb.html"> Ambulance</a></li>
+    </ul>
+</div>
+<a href="Home Page.html"><img class="logo22" src="bbt.png" height="100" width="100"></a>
+<!-- Slider -->
+<div id="slider">
+  <div class="slides">
+    <div class="slider">
+      <div class="legend"></div>
+      <div class="content">
+        <div class="content-txt">
+          <h1>Why we did it?</h1>
+          <h2>We noticed that Medicine shortage has become a common problem , so we decided to help all the people to overcome this issue.</h2>
+        </div>
+      </div>
+      <div class="image">
+        <img src="phar3.jpg">
+      </div>
+    </div>
+	
+    <div class="slider">
+      <div class="legend"></div>
+      <div class="content">
+        <div class="content-txt">
+          <h1>What do we gain from it ?</h1>
+          <h2>We're just doing it for the common benefit .</h2>
+        </div>
+      </div>
+      <div class="image">
+        <img src="phar1.jpg">
+      </div>
+    </div>
+	
+    <div class="slider">
+      <div class="legend"></div>
+      <div class="content">
+        <div class="content-txt">
+          <h1>Pharmacies & Medicine</h1>
+          <h2>In this Section our website helps the user to know the nearest pharmacy for him & thier delivery number.</h2>
+        </div>
+      </div>
+      <div class="image">
+        <img src="phar7.jpg">
+      </div>
+    </div>
+	
+    <div class="slider">
+      <div class="legend"></div>
+      <div class="content">
+        <div class="content-txt">
+          <h1>Coming Soon</h1>
+          <h2>We'll provide the pharmacies with the info of the medicine suppliers.</h2>
+        </div>
+      </div>
+      <div class="image">
+        <img src="phar2.jpg">
+      </div>
+    </div>
+	
+  </div>
+  <div class="switch">
+    <ul>
+      <li><div class="on"></div></li>
+      <li></li>
+      <li></li>
+      <li></li>
+    </ul>
+  </div>
+</div>
+</br>
+</br>
+</br>
+</br>
+</br>
+<div class="video">
+<video loop autoplay muted  height="500" width="1500" >
+  <source src="advertisment.mp4" type="video/mp4">
+  <source src="advertisment.ogg" type="video/ogg">
+  </video>
+
+</div>
+</br></br></br></br></br></br>
+
+<link href='https://fonts.googleapis.com/css?family=Roboto+Condensed' rel='stylesheet' type='text/css'>
+
+<div id="countdown" data-date="Sun Dec 11 2017 17:30">
+
+  <p class="countdown-element"></p>
+
+</div>
+<script>
+(function($){
+
+var dataDate = $('#countdown').data('date');
+
+var countdown = {
+    END_DATE: Date.parse(dataDate),
+    END_DATE_MESSAGE: "",
+    NOW: new Date(),
+
+    count: 4,
+    padding: 20,
+    circleSize: 150,
+    border: 20,
+    update: 1000,
+
+    circles: {
+      DAYS: {
+        title: "DAYS",
+          seconds: 86400000,
+          max: 31,
+          color: '#ffa300'
+      },
+      HOURS: {
+        title: "HOURS",
+          seconds: 3600000,
+          max: 24,
+          color: '#0071c5'
+      },
+      MINUTES: {
+          title: "MINUTES",
+          seconds: 60000,
+          max: 60,
+          color: '#00aeef'
+      },
+      SECONDS: {
+          title: "SECONDS",
+          seconds: 1000,
+          max: 60,
+          color: '#76daff'
+      }
+    },
+
+    init: function () {
+
+      countdown.canvas = document.createElement('canvas');
+      countdown.ctx = countdown.canvas.getContext('2d');
+
+      countdown.size = {
+        w: ((countdown.circleSize + countdown.border) * countdown.count + (countdown.padding * (countdown.count - 1))),
+        h: (countdown.circleSize + countdown.border + countdown.padding * 5)
+      };
+
+      countdown.canvas.setAttribute('width', countdown.size.w);
+      countdown.canvas.setAttribute('height', countdown.size.h);
+
+      $("#countdown").append(countdown.canvas);
+
+      countdown.ctx.textAlign = 'center';
+      countdown.actualSize = countdown.circleSize + countdown.border;
+      countdown.TIME_LEFT = new Date(countdown.END_DATE).getTime();
+
+      var INTERVAL = setInterval(function(){
+        var NOW = new Date();
+          if (NOW < countdown.END_DATE ) {
+            countdown.start();
+          } else {
+            countdown.completed();
+          }
+      }, countdown.update);
+
+    },
+
+    start: function () {
+
+      // this clears the redraw text issue after loading the intel font
+      countdown.ctx.setTransform(1, 0, 0, 1, 0, 0);
+      countdown.ctx.clearRect(0, 0, countdown.size.w, countdown.size.h);
+
+      var idx = 0;
+
+      countdown.time = (new Date().getTime()) - countdown.TIME_LEFT;
+
+      for (var key in countdown.circles) {
+        countdown.draw(idx++, key, countdown.circles[key], countdown.circles[key].color);
+      }
+
+    },
+
+    draw: function (idx, label, circle, color) {
+
+      var x, y, value,
+      circleSeconds = circle.seconds;
+
+      value = parseFloat(countdown.time / circleSeconds);
+      countdown.time -= Math.round(parseInt(value)) * circleSeconds;
+
+      value = Math.abs(value);
+
+      x = (countdown.circleSize * .5 + countdown.border * .5);
+      x += (idx * (countdown.circleSize + countdown.padding + countdown.border));
+      y = countdown.circleSize * .5;
+      y += countdown.border * .5;
+
+      var degrees = 360 - (value / circle.max) * 360.0;
+      var endAngle = degrees * (Math.PI / 180);
+
+      countdown.ctx.save();
+
+      countdown.ctx.translate(x, y);
+      countdown.ctx.clearRect(countdown.actualSize * -0.5, countdown.actualSize * -0.5, countdown.actualSize, countdown.actualSize);
+
+      // OUTLINE
+      countdown.ctx.beginPath();
+      countdown.ctx.strokeStyle = "rgba(230,230,230, .1)";
+      countdown.ctx.arc(0, 0, countdown.circleSize / 2, 0, 2 * Math.PI, 2);
+      countdown.ctx.lineWidth = countdown.border;
+      countdown.ctx.stroke();
+
+      // FILL
+      countdown.ctx.beginPath();
+      countdown.ctx.strokeStyle = color;
+      countdown.ctx.arc(0, 0, countdown.circleSize / 2, 0, endAngle, 1);
+      countdown.ctx.lineWidth = countdown.border;
+      countdown.ctx.stroke();
+
+      // TEXT COLOR
+      countdown.ctx.fillStyle = "rgba(230,230,230, 1)";
+
+      // COUNTDOWN TIME
+      countdown.ctx.font = 'bold 70px Roboto Condensed';
+      countdown.ctx.fillText(Math.floor(value), 0, 20);
+
+      // DAYS, HOURS, MINUTES
+      countdown.ctx.font = 'bold 42px Roboto Condensed';
+      if (Math.floor(value) === 1) {
+        countdown.ctx.fillText(label.substring(0, label.length - 1), 0, 140);
+      } else {
+        countdown.ctx.fillText(label, 0, 140);
+      }
+
+      countdown.ctx.restore();
+
+    },
+
+    completed: function() {
+
+      countdown.ctx.setTransform(1, 0, 0, 1, 0, 0);
+      countdown.ctx.clearRect(0, 0, countdown.size.w, countdown.size.h);
+
+      var idx = 0;
+      countdown.time = "0";
+
+      for (var key in countdown.circles) {
+        countdown.draw(idx++, key, countdown.circles[key], "#e6e6e6");
+      }
+
+      // countdown.ctx.setTransform(1, 0, 0, 1, 0, 0);
+      // countdown.ctx.clearRect(0, 0, countdown.size.w, countdown.size.h);
+      // countdown.canvas.setAttribute('height', 160);
+      // countdown.ctx.font = 'bold 140px intel-clear-pro';
+      // countdown.ctx.fillText(countdown.END_DATE_MESSAGE, 0, 150);
+
+      // countdown.canvas.setAttribute('style', 'display: none;');
+
+      countdown.ctx.save();
+
+    }
+
+};
+
+countdown.init();
+
+})(jQuery);
+</script>
+
+
+<script>
+    
+    $(function() {  
+  $(".sub-menu-link").click(function(e) {
+    e.preventDefault();    
+    $(".sub-menu-overlay").toggleClass("open");
+    $(".sub-menu").toggleClass("open");
+  });	
+});
+</script>
+
+<script>
+		// https://css-tricks.com/jquery-magicline-navigation/
+// https://css-tricks.com/examples/MagicLine/
+// Tried to isolate an issue posted on the css-tricks.com/forums -> https://css-tricks.com/forums/discussion/24993/help-with-jquery-magicline-navigation
+$(function() {
+
+    var $el, leftPos, newWidth;
+        $mainNav2 = $("#fancy-nav");
+     
+    /*
+        EXAMPLE TWO
+    */
+    
+    $mainNav2.append("<li id='magic-line-two'></li>");
+    
+    var $magicLineTwo = $("#magic-line-two");
+    
+    $magicLineTwo
+        .width($(".current_page_item_two").width())
+        .height($mainNav2.height())
+        .css("left", $(".current_page_item_two a").position().left)
+        .data("origLeft", $(".current_page_item_two a").position().left)
+        .data("origWidth", $magicLineTwo.width())
+        .data("origColor", $(".current_page_item_two a").attr("rel"));
+                
+    $("#fancy-nav a").hover(function() {
+        $el = $(this);
+        leftPos = $el.position().left;
+        newWidth = $el.parent().width();
+        $magicLineTwo.stop().animate({
+            left: leftPos,
+            width: newWidth,
+            backgroundColor: $el.attr("rel")
+        })
+    }, function() {
+        $magicLineTwo.stop().animate({
+            left: $magicLineTwo.data("origLeft"),
+            width: $magicLineTwo.data("origWidth")
+        });    
+    });
+    
+    /* Kick IE into gear */
+    $(".current_page_item_two a").mouseenter();
+    
+}); 
+	</script>
+
+</body>
+</html>

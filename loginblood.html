@@ -1,0 +1,139 @@
+<!DOC TYPE HTML> 
+<html> 
+<head>
+<meta charset="UTF-8"/>
+<html lang="en"> 
+<meta name="description" content="> 
+<meta name="keywords">
+<meta http-equiv="refresh" content="120"> 
+<meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+<meta name="viewport" content="width=device-width,intial-scale=1">
+<title> Login Form bloodbank </title> 
+<link href="css/hover.css" rel="stylesheet" media="all">
+<link rel="stylesheet" href="css/loginblood.css"/>
+<link href='http://fonts.googleapis.com/css?family=Raleway' rel='stylesheet' type='text/css'>
+	<link href="https://fonts.googleapis.com/css?family=Fredoka+One" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Abril+Fatface" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Abril+Fatface" rel="stylesheet">
+	<script src="js/html5shiv.min.js"></script>  
+<script src="js/respond.min.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.0/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+</head>
+<body >
+    	<div class="nav-wrap">   
+  <ul class="group" id="fancy-nav">
+      <li class="current_page_item_two"><a href="Home Page.html">Home</a></li>
+      <li><a href="fordr.html">For Doctors</a></li>
+      <li><a href="profile.html">User Account</a></li>
+      <li><a href="form reg.html">Register</a></li>
+      <li><a href="signinforms.html">Sign In</a></li>
+	  <li><a href="Home Page.html">Sign Out</a></li>
+	  <li><a href="Sitemap.html">Sitemap</a></li>
+  </ul> 
+</div>
+	
+	  <div class="sub-menu">
+    <span class="sub-menu-circle"></span>
+    <a href="#" class="sub-menu-link">
+        <span class="sub-menu-icon">
+     <h1 class="hh1">Menu</h1>
+        </span>
+    </a>
+</div>
+<div class="sub-menu-overlay">
+    <ul class="sub-menu-list">
+        <li><a href="newclinics.html">Clinic </a></li> 
+        <li><a href=""> Hospitals</a></li>
+        <li><a href="pharmacy-new.html">pharamcy</a></li>
+        <li><a href="labs&radiology.html">Labs and Radiology </a></li>
+        <li><a href="secbb.html"> blood bank</a></li> 
+        <li><a href="amb.html"> Ambulance</a></li>
+    </ul>
+</div>
+<a href="Home Page.html"><img class="logo22" src="bbt.png" height="100" width="100"></a>
+
+
+    <div class="im"> 
+<img src="hr.png" height="500" width="500" alt="img">
+</div>
+
+<div class="img"> 
+<img src="hr.png" height="500" width="500"  alt="img">
+</div>
+    <div class="shape">
+        <h1 class="hh">Login</h1>
+<br><br><br><br>
+<form class="hf" action="/action_page.php" align="center">
+   <label for="User Name"><img src="u5.png" height="30" width="30"></label>
+    <input type="text" id="username" name="user name " placeholder="User Name...">
+		<br><br>
+<label for="password"><img src="p5.png" height="30" width="30"></label>
+    <input type="password" id="password" name="password" placeholder="Password..." ><br>
+	
+<br>
+	<input type="submit" value="Submit">
+  </form></div>
+	<script>
+    
+    $(function() {  
+  $(".sub-menu-link").click(function(e) {
+    e.preventDefault();    
+    $(".sub-menu-overlay").toggleClass("open");
+    $(".sub-menu").toggleClass("open");
+  });	
+});
+</script>
+
+<script>
+		// https://css-tricks.com/jquery-magicline-navigation/
+// https://css-tricks.com/examples/MagicLine/
+// Tried to isolate an issue posted on the css-tricks.com/forums -> https://css-tricks.com/forums/discussion/24993/help-with-jquery-magicline-navigation
+$(function() {
+
+    var $el, leftPos, newWidth;
+        $mainNav2 = $("#fancy-nav");
+     
+    /*
+        EXAMPLE TWO
+    */
+    
+    $mainNav2.append("<li id='magic-line-two'></li>");
+    
+    var $magicLineTwo = $("#magic-line-two");
+    
+    $magicLineTwo
+        .width($(".current_page_item_two").width())
+        .height($mainNav2.height())
+        .css("left", $(".current_page_item_two a").position().left)
+        .data("origLeft", $(".current_page_item_two a").position().left)
+        .data("origWidth", $magicLineTwo.width())
+        .data("origColor", $(".current_page_item_two a").attr("rel"));
+                
+    $("#fancy-nav a").hover(function() {
+        $el = $(this);
+        leftPos = $el.position().left;
+        newWidth = $el.parent().width();
+        $magicLineTwo.stop().animate({
+            left: leftPos,
+            width: newWidth,
+            backgroundColor: $el.attr("rel")
+        })
+    }, function() {
+        $magicLineTwo.stop().animate({
+            left: $magicLineTwo.data("origLeft"),
+            width: $magicLineTwo.data("origWidth")
+        });    
+    });
+    
+    /* Kick IE into gear */
+    $(".current_page_item_two a").mouseenter();
+    
+}); 
+	</script>
+	
+	
+            
+</body>
+</html>
+  

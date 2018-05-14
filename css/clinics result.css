@@ -1,0 +1,352 @@
+body{
+	 background-image: url("w1.jpg");
+	 background-repeat: repeat-x; /* To not repeat the background image */
+	 background-attachment: fixed; /* To make the background image fixed on the screen */
+	 font-family: 'Playfair Display', serif;
+}
+/* navigation bar */
+
+#TopOne {
+    float: left;
+    width: 85%;
+    height: 7%;
+    margin: 0px 65px;
+    background-color: #E5E4E2;
+    border-radius: 4px;
+    overflow: hidden;
+    box-shadow: 0 0 5px rgba(0,0,0,0.3);
+    position: absolute;
+    top: 10px;
+    left: 40px;
+    padding: 17px;
+}
+
+#navigation-bar ul {
+    margin: -30px;
+    padding: 0;
+    list-style: none;
+    width: 100%;
+    border-radius: 4px;
+    overflow: hidden;
+}
+
+#navigation-bar li {
+    float: left;
+    padding: 0;
+    margin: 0;
+    width: 20%;
+}
+
+#navigation-bar a {
+    color: #3BB9FF;
+    font-size: 20px;
+    text-decoration: none;
+    text-align: center;
+    width: 100%;
+    padding: 20px 0;
+    display: block;
+    position: relative;
+    transition: all 0.3s ease;
+}
+
+    #navigation-bar a:hover {
+        color: black;
+    }
+    /*  #navigation-bar li:first-child a {border-radius:4px 0 0 4px;}
+#navigation-bar li:last-child a {border-radius:0 4px 4px 0;}  */
+    #navigation-bar a:before {
+        content: '';
+        transition: all .4s ease-in-out;
+        position: absolute;
+        right: 50%;
+        left: 50%;
+        bottom: 0;
+        display: block;
+        height: 2px;
+        background-color: #e74c3c;
+    }
+
+    #navigation-bar li:hover a:before, #navigation-bar a:hover:before {
+        right: 0;
+        left: 0;
+    }
+
+#navigation-bar span {
+    display: block;
+}
+
+/*end navbar*/
+ /* start result*/
+.sub-div1 {
+    background: white;
+    position: relative;
+    display: block;
+    color: cornflowerblue;
+   bottom:500px;
+    width: 50%;
+    height: 600px;
+    left: 100px;
+    font-size: 20px;
+    font-weight: bold;
+    text-align: left;
+    border-radius: 45px;
+	box-shadow:10px 10px 5px black;
+
+}
+.sub-div2 {
+    background: white;
+    position: relative;
+    display: block;
+    color: cornflowerblue;
+    bottom: 450px;
+    width: 50%;
+    height: 600px;
+    left: 100px;
+    font-size: 20px;
+    font-weight: bold;
+    text-align: left;
+    border-radius: 45px;
+	box-shadow:10px 10px 5px black;
+}
+.sub-div3 {
+    background: white;
+    position: relative;
+    display: block;
+    color: cornflowerblue;
+    bottom: 400px;
+    width: 50%;
+    height: 600px;
+    left: 100px;
+    font-size: 20px;
+    font-weight: bold;
+    text-align: left;
+    border-radius: 45px;
+	box-shadow:10px 10px 5px black;
+}
+ .Doctorsname{
+     width:20px;
+     height:20px;
+     position:relative;
+     left:20px;
+     top:20px;
+ }
+ .p1{
+     position:relative;
+     left:50px;
+     top:65px;
+ }
+ .clinicname{
+      width:20px;
+     height:20px;
+     position:relative;
+     left:20px;
+     top:20px;
+    
+ }
+ .p2 {
+     position:relative;
+     top:60px;
+     left:50px;
+
+ }
+ .p3{
+   position:relative;
+   top:55px;
+   left:50px;
+ }
+ 
+ .p4{
+	 position:relative;
+	 top:50px;
+	 left:50px;
+ }
+  .p5{
+	 position:relative;
+	 top:45px;
+	 left:50px;
+ }
+ 
+  .p6{
+	 position:relative;
+	 top:30px;
+	 left:50px;
+ }
+ 
+  .p7{
+	 position:relative;
+	 top:35px;
+	 left:50px;
+ }
+ 
+  .p8{
+	 position:relative;
+	 top:20px;
+	 left:50px;
+ }
+ 
+  .p9{
+	 position:relative;
+	 top:15px;
+	 left:50px;
+ }
+ .doctorphone {
+     width:20px;
+     height:20px;
+     position:relative;
+     left:20px;
+     top:20px;
+ }
+ 
+  .clinicphone {
+     width:20px;
+     height:20px;
+     position:relative;
+     left:20px;
+     top:20px;
+ }
+ 
+ 
+ .locicon {
+    width:20px;
+     height:20px;
+     position:relative;
+     left:20px;
+     top:20px;
+ }
+ 
+ .p10{
+     position:relative;
+     left:70px;
+   top:10px;
+   color:midnightblue;
+ }
+ 
+ .fees{
+	      width:20px;
+     height:20px;
+     position:relative;
+     left:20px;
+     top:20px;
+ }
+.workinghours {
+      width:20px;
+     height:20px;
+     position:relative;
+     left:20px;
+     top:20px;
+ }
+ 
+ .workingdays {
+      width:20px;
+     height:20px;
+     position:relative;
+     left:20px;
+     top:20px;
+ }
+ 
+ .certifications{
+      width:20px;
+     height:20px;
+     position:relative;
+     left:20px;
+     top:20px;
+ }
+ 
+  .Specification{
+      width:20px;
+     height:20px;
+     position:relative;
+     left:20px;
+     top:20px;
+ }
+ 
+ 
+.ads {
+    border-radius: 25px;
+    border: 2px solid midnightblue;
+    padding: 20px;
+    width: 300px;
+    height: 700px;
+    position:relative;
+    top:400px;
+    left:950px;
+    text-align:center;
+	box-shadow:10px 10px 5px ;
+}
+/*rating stars*/
+/*sprite with stars*/
+#reviewStars-input input:checked ~ label, #reviewStars-input label, #reviewStars-input label:hover, #reviewStars-input label:hover ~ label {
+  background: url('http://positivecrash.com/wp-content/uploads/ico-s71a7fdede6.png') no-repeat;
+}
+
+#reviewStars-input {
+  
+  /*fix floating problems*/
+  overflow: hidden;
+  *zoom: 1;
+  /*end of fix floating problems*/
+  padding-top:70px;
+  position: relative;
+  float:right;
+
+}
+
+#reviewStars-input input {
+  filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=0);
+  opacity: 0;
+  
+  width: 20px;
+  height:20px;
+  
+  position: absolute;
+  top: 0;
+  z-index: 0;
+}
+
+#reviewStars-input input:checked ~ label {
+  background-position: 0 -40px;
+  height: 40px;
+  width: 43px;
+}
+
+#reviewStars-input label {
+  background-position: 0 0;
+  height: 40px;
+  width: 43px;
+  float: right;
+  cursor: pointer;
+  margin-right: 10px;
+  
+  position: relative;
+  z-index: 1;
+}
+
+#reviewStars-input label:hover, #reviewStars-input label:hover ~ label {
+  background-position: 0 -40px;
+  height: 40px;
+  width: 43px;
+}
+
+#reviewStars-input #star-0 {
+  left: 0px;
+}
+#reviewStars-input #star-1 {
+  left: 53px;
+}
+#reviewStars-input #star-2 {
+  left: 106px;
+}
+#reviewStars-input #star-3 {
+  left: 159px;
+}
+#reviewStars-input #star-4 {
+  left: 212px;
+}
+#reviewStars-input #star-5 {
+  left: 265px;
+}
+.image{
+	padding-top:20px;
+	padding-right:20px;
+	
+}

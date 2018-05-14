@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Labs & Radiology</title>
+<link rel="stylesheet" href="css/mainpage.css"/> 
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+<script src="F:\level 4/graduation project/project/js/bootstrap.min"></script>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <link href='http://fonts.googleapis.com/css?family=Raleway' rel='stylesheet' type='text/css'>
+	<link href="https://fonts.googleapis.com/css?family=Fredoka+One" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Abril+Fatface" rel="stylesheet">
+</head>
+<body>
+
+<div class="nav-wrap">   
+  <ul class="group" id="fancy-nav">
+      <li class="current_page_item_two"><a href="Home Page.html">Home</a></li>
+      <li><a href="fordr.html">For Doctors</a></li>
+      <li><a href="profile.html">User Account</a></li>
+      <li><a href="form reg.html">Register</a></li>
+      <li><a href="signinforms.html">Sign In</a></li>
+	  <li><a href="Home Page.html">Sign Out</a></li>
+	  <li><a href="Sitemap.html">Sitemap</a></li>
+  </ul> 
+</div>
+	
+	  <div class="sub-menu">
+    <span class="sub-menu-circle"></span>
+    <a href="#" class="sub-menu-link">
+        <span class="sub-menu-icon">
+     <h1 class="hh1">Menu</h1>
+        </span>
+    </a>
+</div>
+<div class="sub-menu-overlay">
+    <ul class="sub-menu-list">
+        <li><a href="newclinics.html">Clinic </a></li> 
+        <li><a href=""> Hospitals</a></li>
+        <li><a href="pharmacy-new.html">pharamcy</a></li>
+        <li><a href="labs&radiology.html">Labs and Radiology </a></li>
+        <li><a href="secbb.html"> blood bank</a></li> 
+        <li><a href="amb.html"> Ambulance</a></li>
+    </ul>
+</div>
+<a href="Home Page.html"><img class="logo22" src="bbt.png" height="100" width="100"></a>
+<h1 class="title"> La<img src="dna.png"/>bs & Radio<img src="bb2.png" />logy </h1>
+
+<!--labs & Radiology sections-->
+<section class="container">
+  <div class="left-half">
+<a href="labs.html">
+<div class="hex">
+<div class="inner">
+    <p>All the labs you need</p>
+      <hr class="center">
+    <h4>Labs</h4>
+  </div>
+  <div class="hex-1"></div>
+  <div class="hex-2"></div>
+</div></a>
+
+<a href="labs.html">
+<div class="hex image image-2">
+  <div class="hex-1 blue"></div>
+  <div class="hex-2 blue"></div>
+</div></a>
+<br>
+
+<a href="labs.html">
+<div class="hex">
+<div class="inner">
+    <p>Find all & the nearest lab to you & what you should do before the test. </p>
+  </div>
+  <div class="hex-1"></div>
+  <div class="hex-2"></div>
+</div></a>
+
+</div>
+<!--right side-->
+<div class="right-half">
+<a href="rad.html">
+<div class="hex">
+  <div class="inner">
+    <p>All the Radiology Centers</p>
+      <hr class="center">
+    <h4>Radiology</h4>
+  </div>
+  <div class="hex-1"></div>
+  <div class="hex-2"></div>
+</div></a>
+  
+ <a href="rad.html">
+<div class="hex image image-3">
+  <div class="hex-1 blue"></div>
+  <div class="hex-2 blue"></div>
+</div></a>
+<br>
+<a href="rad.html">
+<div class="hex">
+<div class="inner">
+    <p></br>Find all & the nearest Radiology center to you </p>
+  </div>
+  <div class="hex-1"></div>
+  <div class="hex-2"></div>
+</div></a>
+</div>
+</section>
+
+<script>
+    
+    $(function() {  
+  $(".sub-menu-link").click(function(e) {
+    e.preventDefault();    
+    $(".sub-menu-overlay").toggleClass("open");
+    $(".sub-menu").toggleClass("open");
+  });	
+});
+</script>
+
+<script>
+		// https://css-tricks.com/jquery-magicline-navigation/
+// https://css-tricks.com/examples/MagicLine/
+// Tried to isolate an issue posted on the css-tricks.com/forums -> https://css-tricks.com/forums/discussion/24993/help-with-jquery-magicline-navigation
+$(function() {
+
+    var $el, leftPos, newWidth;
+        $mainNav2 = $("#fancy-nav");
+     
+    /*
+        EXAMPLE TWO
+    */
+    
+    $mainNav2.append("<li id='magic-line-two'></li>");
+    
+    var $magicLineTwo = $("#magic-line-two");
+    
+    $magicLineTwo
+        .width($(".current_page_item_two").width())
+        .height($mainNav2.height())
+        .css("left", $(".current_page_item_two a").position().left)
+        .data("origLeft", $(".current_page_item_two a").position().left)
+        .data("origWidth", $magicLineTwo.width())
+        .data("origColor", $(".current_page_item_two a").attr("rel"));
+                
+    $("#fancy-nav a").hover(function() {
+        $el = $(this);
+        leftPos = $el.position().left;
+        newWidth = $el.parent().width();
+        $magicLineTwo.stop().animate({
+            left: leftPos,
+            width: newWidth,
+            backgroundColor: $el.attr("rel")
+        })
+    }, function() {
+        $magicLineTwo.stop().animate({
+            left: $magicLineTwo.data("origLeft"),
+            width: $magicLineTwo.data("origWidth")
+        });    
+    });
+    
+    /* Kick IE into gear */
+    $(".current_page_item_two a").mouseenter();
+    
+}); 
+	</script>
+</body>
+</html>

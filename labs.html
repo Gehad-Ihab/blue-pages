@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Labs</title>
+<link rel="stylesheet" href="css/lab.css"/> 
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+<script src="F:\level 4/graduation project/project/js/bootstrap.min"></script>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <link href='https://fonts.googleapis.com/css?family=Alfa+Slab+One' rel='stylesheet' type='text/css'>
+	
+<link href='http://fonts.googleapis.com/css?family=Raleway' rel='stylesheet' type='text/css'>
+	<link href="https://fonts.googleapis.com/css?family=Fredoka+One" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Abril+Fatface" rel="stylesheet">
+</head>
+
+<body>
+	
+		<div class="nav-wrap">   
+  <ul class="group" id="fancy-nav">
+      <li class="current_page_item_two"><a href="Home Page.html">Home</a></li>
+      <li><a href="fordr.html">For Doctors</a></li>
+      <li><a href="profile.html">User Account</a></li>
+      <li><a href="form reg.html">Register</a></li>
+      <li><a href="signinforms.html">Sign In</a></li>
+	  <li><a href="Home Page.html">Sign Out</a></li>
+	  <li><a href="Sitemap.html">Sitemap</a></li>
+  </ul> 
+</div>
+	
+	  <div class="sub-menu">
+    <span class="sub-menu-circle"></span>
+    <a href="#" class="sub-menu-link">
+        <span class="sub-menu-icon">
+     <h1 class="hh1">Menu</h1>
+        </span>
+    </a>
+</div>
+<div class="sub-menu-overlay">
+    <ul class="sub-menu-list">
+        <li><a href="newclinics.html">Clinic </a></li> 
+        <li><a href=""> Hospitals</a></li>
+        <li><a href="pharmacy-new.html">pharamcy</a></li>
+        <li><a href="labs&radiology.html">Labs and Radiology </a></li>
+        <li><a href="secbb.html"> blood bank</a></li> 
+        <li><a href="amb.html"> Ambulance</a></li>
+    </ul>
+</div>
+<a href="Index.html"><img class="logo22" src="bbt.png" height="100" width="100"></a>
+
+<!--title-->
+<div class="box box-1">Laboratory</div>
+<!---------------------------------------->
+<!--text-->
+<div class="text">
+<h2 class="rw-sentence">
+  <span>Here you Can &hellip; </span>
+    <div class="rw-words rw-words-1">
+      <span>Find all the labs you need with thier branches.</span>
+      <span>Find the expected cost for each test.</span>
+      <span>Rate the service of the labs & see others reviews.</span>
+      <span>Find out what you should do before the test.</span>
+    </div>
+  </h2>
+</div>
+<!---------------------------------------------------------------------------->
+<!--hexagon-->
+<div class="container">
+	<div class="hex hex-1 hex-gap">		
+		<div class="inner">
+				<h4>Find the lab you want</h4>
+				<hr />
+				<p>with thier branches</p>
+		</div>		
+		<a href="#"></a>
+		<div class="corner-1"></div>
+		<div class="corner-2"></div>		
+	</div>
+	
+	
+		<div class="hex" style="background-image: url(dna.gif);">		
+		<a href="#"></a>		
+		<div class="corner-1"></div>
+		<div class="corner-2"></div>		
+	</div>
+
+	
+	<div class="hex hex-2">		
+		<div class="inner">
+		<h4>Find out what you should </h4>
+		<hr/>
+		<p>do before the test</p>
+		</div>		
+		<a href="test.html"></a>
+		<div class="corner-1"></div>
+		<div class="corner-2"></div>		
+	</div>
+	
+
+	
+</div>
+<script><!--script for the title-->
+$(document).ready(function(){
+
+	var direction = true;	
+
+	var time = 0;
+
+	var counter = 300;
+
+	var speed = 1;
+
+	(function myLoop () {
+
+		setTimeout(function () { 
+
+		   	time++;
+
+	   		var degrees = -counter/3;
+	   		var degrees_2 = -counter/2;
+	   		var degrees_3 = -counter/1;
+ 
+	   		var radian = degrees * (Math.PI/180);
+	   		var radian_2 = degrees_2 * (Math.PI/180);
+
+	   		var y = 200-(Math.cos(radian)*200);
+	   		var z = (Math.sin(radian)*200);
+
+	   		var y_2 = y+(200-(Math.cos(radian_2)*200));
+	   		var z_2 = z+(Math.sin(radian_2)*200);
+
+	   		$(".box-1").css("transform", "rotateX("+degrees+"deg)");
+	   		$(".box-2").css("transform", "translateZ("+z+"px) translateY(-"+y+"px) rotateX("+degrees_2+"deg)");
+	   		$(".box-3").css("transform", "translateZ("+z_2+"px) translateY(-"+y_2+"px) rotateX("+degrees_3+"deg)");
+	   		
+	   		// Fade in
+		   	if(time == 40){
+		   		$(".box-2").fadeIn(200);
+		   	}
+		   	if(time == 80){
+		   		$(".box-3").fadeIn(200);
+		   	}
+
+		   	// Direction
+		    if(direction){
+		    	counter = counter - 2;
+		    }else{
+		     	counter = counter + 2;
+		    }
+
+		    // Slow the animation
+			if(time > 120){
+				speed = speed*1.012;
+			}
+		    
+		    // Change direction
+		    if(time == 241){
+		     	direction = false;
+		    }
+		    if(time == 378){
+		     	direction = true;
+		    }
+		    if(time == 447){
+		     	direction = false;
+		    }
+		    if(time == 480){
+		     	direction = true;
+		    }
+		    if(time == 490){
+		     	return false
+		    }		    
+
+		    myLoop(time, speed, counter);
+		}, speed)
+	})(); 
+
+});
+</script>
+<script><!--script for text-->
+$('.social').hide(function() {
+  $(this).delay(12000).fadeIn(800);
+});
+
+$('.rw-sentence')
+  .delay(10000)
+  .fadeOut(400);
+</script>
+
+<script>
+    
+    $(function() {  
+  $(".sub-menu-link").click(function(e) {
+    e.preventDefault();    
+    $(".sub-menu-overlay").toggleClass("open");
+    $(".sub-menu").toggleClass("open");
+  });	
+});
+</script>
+
+<script>
+		// https://css-tricks.com/jquery-magicline-navigation/
+// https://css-tricks.com/examples/MagicLine/
+// Tried to isolate an issue posted on the css-tricks.com/forums -> https://css-tricks.com/forums/discussion/24993/help-with-jquery-magicline-navigation
+$(function() {
+
+    var $el, leftPos, newWidth;
+        $mainNav2 = $("#fancy-nav");
+     
+    /*
+        EXAMPLE TWO
+    */
+    
+    $mainNav2.append("<li id='magic-line-two'></li>");
+    
+    var $magicLineTwo = $("#magic-line-two");
+    
+    $magicLineTwo
+        .width($(".current_page_item_two").width())
+        .height($mainNav2.height())
+        .css("left", $(".current_page_item_two a").position().left)
+        .data("origLeft", $(".current_page_item_two a").position().left)
+        .data("origWidth", $magicLineTwo.width())
+        .data("origColor", $(".current_page_item_two a").attr("rel"));
+                
+    $("#fancy-nav a").hover(function() {
+        $el = $(this);
+        leftPos = $el.position().left;
+        newWidth = $el.parent().width();
+        $magicLineTwo.stop().animate({
+            left: leftPos,
+            width: newWidth,
+            backgroundColor: $el.attr("rel")
+        })
+    }, function() {
+        $magicLineTwo.stop().animate({
+            left: $magicLineTwo.data("origLeft"),
+            width: $magicLineTwo.data("origWidth")
+        });    
+    });
+    
+    /* Kick IE into gear */
+    $(".current_page_item_two a").mouseenter();
+    
+}); 
+	</script>
+</body>
+</html>

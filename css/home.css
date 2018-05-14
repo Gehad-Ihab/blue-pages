@@ -1,0 +1,186 @@
+
+  ul {
+   list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #ede7db;
+		
+  }
+	
+
+
+	
+	
+	
+      ul li {float: right;}
+	  li ul {display: none;}
+	  
+	  ul li a {display: block;
+	     overflow: hidden;
+	     padding-left:25px;
+	     padding-bottom:20;
+	     padding-top:15;
+	     padding-right:25px;
+         transition: all 0.2s;
+         white-space: nowrap;
+         color: #493D26;
+	     background:#ede7db;
+	     font-family:Courier New, monospace;
+	     font-size:20px;
+	     font-style:bold;
+		 clear:none;
+	
+		 }
+	
+	
+  ul li a:hover {background: #f5f2ec;text-decoration: none; clear:none;}
+  li:hover ul {display: block; position: absolute;  text-decoration: none; clear:none;}
+  li:hover li {float: none;  text-decoration: none; clear:none;}
+  li:hover li a:hover {background:#f5f2ec;  text-decoration: none; clear:none;}
+
+
+.overlay {
+    height: 0%;
+    width: 100%;
+    position: fixed;
+    z-index: 1;
+    background-color:#FCDFFF;
+    overflow-y: hidden;
+    transition: 0.5s;
+      display:inline-block;
+	
+    
+}
+
+.overlay-content {
+    position: relative;
+    top: 25%;
+    width: 100%;
+    text-align: center;
+    margin-top: 30px;
+	 padding-bottom:15px; 
+	font-family:Brush Script Std, Brush Script MT, cursive;
+	
+}
+
+.overlay a {
+    padding: 8px;
+    text-decoration: none;
+    font-size: 36px;
+    color: #DC381F; 
+    display: block;
+    transition: 0.3s;
+	
+     
+}
+
+.overlay a:hover, .overlay a:focus {
+    color:#00FFFF;
+
+}
+
+.overlay .closebtn {
+    position: absolute;
+    top: 20px;
+    right: 45px;
+    font-size: 60px;
+    
+}
+
+
+
+
+
+.cin1{ 
+color:#B6B6B4;
+display:inline-block;
+padding-right:50px;
+background-color:;
+}
+
+
+.cin2{ 
+color:#B6B6B4;
+display:inline-block;
+padding-right:50px;
+background-color:;
+}
+
+.cin3{ 
+color:#B6B6B4;
+display:inline-block;
+padding-right:50px;
+background-color:;
+}
+
+.cin4{ 
+color:#B6B6B4;
+display:inline-block;
+padding-right:50px;
+background-color:;
+}
+
+.cin5{ 
+color:#B6B6B4;
+display:inline-block;
+padding-right:50px;
+background-color:;
+}
+
+
+.container1{background-color:#7D1B7E;
+padding-bottom:5px;
+padding-top:5px;
+		 }
+	
+	h1{text-align:center;
+font-family:Georgia, serif;
+color:white;
+padding-top:5px;	
+}	
+ span{
+ font-weight:800;
+ color:#EDC9AF;
+ font-size:55px;}
+ 
+ h3{text-align:center;
+font-family:Courier New, monospace;
+font-style:italic;
+color:#EDC9AF;}
+
+body {
+  background-color: #000;
+  height: 700px;
+  overflow: scroll;
+}
+.habal {
+  color:white;
+  margin-top: 700px;
+}
+
+
+
+.scroll-top{width:50px;
+height:40px;
+padding:5px 8px;
+color:#DDD;
+text-align:center;
+right:15px;
+position:fixed;
+bottom:10px;
+z-index:9999;
+
+}
+
+.scrollToTop {
+    width:50px;
+    height:40px;
+    margin-top: 800px;
+    text-align: center;
+    position: fixed;
+    z-index: 9999;
+    bottom: 10px;
+    color:#82CAFF;
+
+}

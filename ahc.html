@@ -1,0 +1,747 @@
+<!DOC TYPE HTML> 
+<html> 
+<head>
+<meta charset="UTF-8"/>
+<html lang="en"> 
+<meta name="description" content="> 
+<meta name="keywords">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title> Admin Forms </title> 
+<link rel="stylesheet" href="css/bootstrap.css"/> 
+<link rel="stylesheet" href="css/font-awesome.min.css"/> 
+<link href="css/hover.css" rel="stylesheet" media="all">
+<link rel="stylesheet" href="css/ahc.css"/>
+    <script src="js/html5shiv.min.js"></script>  
+      <script src="js/respond.min.js"></script>
+			  <script src="js/index.js"></script>
+     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.0/jquery.min.js"></script>
+	    <link href='https://fonts.googleapis.com/css?family=Titillium+Web:400,300,600' rel='stylesheet' type='text/css'>
+<link href="https://fonts.googleapis.com/css?family=Roboto+Slab" rel="stylesheet">
+  <link rel="stylesheet" href="css/normalize.css">
+
+
+  <link rel="stylesheet" href="css/style.css">
+   
+</head>
+<body>
+
+<h1 id="perspective">
+  <strong id="shadow">Admin..please !</strong>
+  <strong>Admin.. please fill this form !</strong>
+</h1>
+
+<div class="container1">
+<div id="myNav" class="overlay">
+  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()"><img src="cancel.png" height="60" width="60"></a>
+  <div class="overlay-content">
+  <div class="set"> 
+
+	<div class="login-wrap">
+		<div class="login-html">
+				<input id="tab-1" type="radio" name="tab" class="sign-in" checked><label for="tab-1" class="tab">Basic Information</label>
+					<input id="tab-2" type="radio" name="tab" class="sign-up"><label for="tab-2" class="tab">Departments</label>
+					<div class="login-form"> 
+						<div class="sign-in-htm">
+					
+					
+  <form class="form15" action="/action_page.php">
+  <br>
+	 <label for="idadmin"><img src="admin.png"></label>
+    <input class="fht" type="text" id="idadmin" name="idadmin" placeholder="Admin ID..">
+		 
+    <label for="hname"><img src="h.png"></label>
+    <input class="fht" type="text" id="Hospital Name" name="Hospital Name" placeholder="Hospital Name..">
+		 
+<br>
+<label for="specilization"><img src="list.png"></label>
+    <input class="fht" type="text" id="specilization" name="specilization" placeholder="specilization..">
+ 
+
+    <label for="hphone"><img src="ph.png"></label>
+    <input class="fht" type="text" id="Hospital Phone" name="Hospital Phone" placeholder="Hospital Phone..">
+
+ <br>
+         <label for="hhotline"><img src="hot.png"></label>
+    <input class="fht" type="text" id="Hospital HotLine" name="Hospital HotLine" placeholder="Hospital HotLine..">
+
+
+   	<label for="hcity"><img src="oo.png"></label>
+    <input class="fht" type="text" id="hcity" name="hcity" placeholder="Hospital City..">
+		<br>
+		<label for="harea"><img src="looo.png"></label>
+    <input class="fht" type="text" id="harea" name="harea" placeholder="Hospital Area..">
+    <label for="haddress"><img src="hoslo.png"></label>
+    <input class="fht" type="text" id="haddress" name="haddress" placeholder="Hospital Address..">
+		
+<br><br>
+    <input class="fo1" type="submit" value="Submit">  <input class="fo1" type="submit" value="Update"> <input class="fo1" type="submit" value="Delete">
+		<input class="fo1" type="Reset" value="Reset">
+  </form>
+						</div>
+						<div class="sign-up-htm">
+							
+							<div  style="margin:0 auto" align="center">
+  <form class="form16" action="/action_page.php">
+  
+ 
+ <br><br>
+    <label for="hid"><img src="hosid.png"></label>
+    <input   class="fht2"  type="text" id="hid" name="hid" placeholder="Hospital ID..">
+
+
+         <label for="hdep"><img src="hosdep.png"></label>
+    <input  class="fht2"  type="text" id="hdep" name="hdep" placeholder="Hospital Department..">
+
+<br><br>
+    <input class="fo2" type="submit" value="Submit">  <input class="fo2" type="submit" value="Update"> <input class="fo2" type="submit" value="Delete">
+		<input class="fo2" type="Reset" value="Reset">
+  </form>
+						
+						
+							
+							
+						
+						</div>
+					</div>
+				</div>
+			</div>
+
+
+</div></div></div></div></div>
+  <span style="font-size:30px;cursor:pointer;color:#00FFFF; " onclick="openNav()"> <img src ="hss.png" height="150" width="150"></span>
+
+<div class="container2">
+<div id="myNav1" class="overlay1">
+    <a href="javascript:void(0)" class="closebtn1" onclick="closeNav1();"><img src="cancel.png" height="60" width="60"></a>
+  <div class="overlay1-content1">
+  <div class="set1"> 
+
+<div  style="margin:0 auto" align="center">
+  <form class="form2" action="/action_page.php">
+  <br>
+	<div class="fileUpload">
+<span class="sii"><img class="sii2" src="add.png" /></span>
+
+<input id="uploadBtn" type="file" class="upload" />
+</div>
+<input id="uploadFile" placeholder="0 files selected" disabled="disabled" />
+	<br>
+   <label for="Dname"><img src="doctor.png"></label>
+    <input class="fht3" type="text" id="Doctor name" name="Dr name" placeholder="Doctor Name..">
+  
+    <label  for="cname"><img src="cn.png"></label>
+    <input class="fht3"  type="text" id="clinic Name" name="clinic Name" placeholder="clinicName..">
+<br><br>
+<label for="cnumber"><img src="drr.png"></label>
+    <input class="fht3" type="text" id="cnumber" name="cnumber" placeholder="Doctor number..">
+   <label for="cphone"><img src="cph.png"></label>
+    <input class="fht3" type="text" id="Clinic Phone" name="Clinic Phone" placeholder="Clinic Phone..">
+	<br><br>
+	
+   <label for="Fees"><img src="coins.png"></label>
+    <input class="fht3" type="text" id="Fees" name="Fees" placeholder="Fees..">
+	   <label for="Working Hours"><img src="hours.png"></label>
+    <input class="fht3" type="text" id="Working Hours" name="Working Hours" placeholder="Working Hours..">
+   <label for="working Days"><img src="days.png"></label>
+    <input class="fht3" type="text" id="working Days" name="working Days" placeholder="working Days..">
+  <br><br>
+    <label for="certifications"><img src="cert.png"></label>
+    <input class="fht3" type="text" id="certifications" name="certifications" placeholder="certifications..">
+         <label for="Specification"><img src="list.png"></label>
+    <input class="fht3" type="text" id="Specification" name="Specification" placeholder="Specification..">
+         <label for="Specificationid"><img src="mh.png"></label>
+    <input class="fht3" type="text" id="Specificationid" name="Specificationid" placeholder="Specification ID..">
+
+  <br><br>
+<label for="ccity"><img src="oo.png"></label>
+    <input class="fht3" type="text" id="ccity" name="ccity" placeholder="city..">
+		<label for="carea"><img src="looo.png"></label>
+    <input class="fht3" type="text" id="carea" name="carea" placeholder="Area..">
+	   <label for="cadress"><img src="clo.png"></label>
+    <input class="fht3" type="text" id="cadress" name="cadress" placeholder="clinic Address..">
+
+		<br>
+    <input class="fo3" type="submit" value="Submit">  <input class="fo3" type="submit" value="Update"> <input class="fo3" type="submit" value="Delete">
+		<input class="fo3" type="Reset" value="Reset">
+  </form>
+</div>
+</div></div></div></div>
+  <span class="s1" style="font-size:30px;cursor:pointer;color:#00FFFF; " onclick="openNav1()"> <img src ="hospital.png" height="150" width="150"></span>
+
+
+
+
+
+<div class="container2">
+<div id="myNav2" class="overlay2">
+    <a href="javascript:void(0)" class="closebtn2" onclick="closeNav2()"><img src="cancel.png" height="60" width="60"></a>
+  <div class="overlay-content2">
+  <div class="set2"> 
+
+<div  style="margin:0 auto" align="center">
+  <form class="form3" action="/action_page.php">
+  <br><br><br><br>
+    <label  for="Aname"><img src="am.png"></label>
+    <input class="fht4" type="text" id="Ambulance Name" name="Ambulance Name" placeholder="Ambulance Name..">
+
+
+   <label for="Aphone"><img src="amph.png"></label>
+    <input class="fht4" type="text" id="Ambulance Phone" name="Ambulance Phone" placeholder="Ambulance Phone..">
+<br><br>
+ 
+	   	<label for="ambcity"><img src="oo.png"></label>
+    <input class="fht4"  type="text" id="ambcity" name="ambcity" placeholder="Ambulance City..">
+		<label for="ambarea"><img src="looo.png"></label>
+    <input class="fht4"  type="text" id="ambarea" name="ambarea" placeholder="Ambulance Area..">
+    <label  for="ambaddress"><img src="amblo.png"></label>
+    <input class="fht4" type="text" id="ambaddress" name="ambaddress" placeholder="Ambulance Address..">
+		
+<br><br><br>
+     <input class="fo4" type="submit" value="Submit">  <input class="fo4"type="submit" value="Update"> <input class="fo4" type="submit" value="Delete">
+ <input class="fo4" type="Reset" value="Reset">
+  </form>
+</div>
+</div></div></div></div>
+  <span class="s2" style="font-size:30px; cursor:pointer; color:#00FFFF; " onclick="openNav2();"> <img src ="gj.png" height="150" width="150"></span>
+	
+<div class="container2">
+<div id="myNav3" class="overlay3">
+    <a href="javascript:void(0)" class="closebtn3" onclick="closeNav3()"><img src="cancel.png" height="60" width="60"></a>
+  <div class="overlay3-content3">
+  <div class="set3"> 
+
+ <div class="form">
+
+    <ul class="tab-group">
+      <li class="tab active"><a href="#signup">Basic Information</a></li>
+      <li class="tab"><a href="#login1">Branches List</a></li>
+    </ul>
+
+    <div class="tab-content">
+      <div id="signup">
+       
+
+        <form action="/" method="post">
+
+         
+     <div class="fp1">
+               
+    <label for="pname"><img src="pharr.png"></label>
+    <input class="fht5" type="text" id="pname " name="pname" placeholder="Pharmacy Name..">
+		 
+		  <br>
+         <label for="photline"><img src="hot.png"></label>
+    <input class="fht5" type="text" id="photline" name="photline" placeholder="Pharmacy  HotLine..">
+
+
+<label for="pemail"><img src="pem.png"></label>
+    <input class="fht5" type="text" id="pemail" name="pemail" placeholder="Pharmacy Email..">
+  
+  		<br><br>
+    <input class="fo5" type="submit" value="Submit">  <input class="fo5" type="submit" value="Update"> <input class="fo5" type="submit" value="Delete">
+  <input class="fo5" type="Reset" value="Reset">
+  </div>
+        </form></div>
+
+      <div id="login1">
+        
+
+        <form action="/" method="post">
+			<div class="fp2">
+<br>
+                    <label for="Bname"><img src="bnp.png"></label>
+    <input class="fht6" type="text" id="Bname " name="Bname" placeholder="Branch Name..">
+	
+	 
+			<label for="BId"><img src="bidp.png"></label>
+    <input class="fht6" type="text" id="BId" name="BId" placeholder="Branch ID..">
+	
+			<br>
+		 <label for="Baddress"><img src="bap.png"></label>
+    <input class="fht6" type="text" id="Baddress " name="Baddress" placeholder="Branch Address..">
+   
+			<label for="Barea"><img src="looo.png"></label>
+    <input class="fht6" type="text" id="Barea" name="Barea" placeholder="Branch Area..">
+<br>
+   <label for="Working Hours"><img src="whphar.png"></label>
+    <input class="fht6" type="text" id="Working Hours" name="Working Hours" placeholder="Working Hours..">
+	
+   <label for="working Days"><img src="icon.png"></label>
+    <input class="fht6" type="text" id="working Days" name="working Days" placeholder="working Days..">
+
+		<br><br>
+    <input class="fo6" type="submit" value="Submit">  <input class="fo6" type="submit" value="Update"> <input class="fo6" type="submit" value="Delete">
+  <input class="fo6" type="Reset" value="Reset">
+         </div>
+
+        </form>
+
+      </div>
+
+    </div>
+    <!-- tab-content -->
+
+  </div>
+  <!-- /form -->
+   
+
+
+</div></div></div></div>
+  <span class="s3" style="font-size:30px; cursor:pointer; color:#00FFFF; " onclick="openNav3();"> <img src ="hosp.png" height="150" width="150"></span>
+
+
+<div class="container2">
+<div id="myNav4" class="overlay4">
+    <a href="javascript:void(0)" class="closebtn4" onclick="closeNav4()"><img src="cancel.png" height="60" width="60"></a>
+  <div class="overlay-content4">
+  <div class="set4"> 
+
+
+     <div class="container">
+        <div class="flat-form">
+            <ul class="tabs1">
+                <li>
+                    <a href="#login" class="active">Basic Labs Information</a>
+                </li>
+                <li>
+                    <a href="#register">Test Type</a>
+                </li>
+                <li>
+                    <a href="#reset">Branches List</a>
+                </li>
+            </ul>
+            <div id="login" class="form-action show">
+                
+                <form>
+                    <ul>
+                        <br>
+    <br>
+    <label for="lname"><img src="n1.png"></label>
+    <input class="fht7" type="text" id="lname " name="lname" placeholder="Lab Name..">
+		
+		
+		  <br>
+         <label for="lhotline"><img src="h1.png"></label>
+    <input class="fht7" type="text" id="lhotline" name="lhotline" placeholder="Lab  HotLine..">
+
+
+<label for="lemail"><img src="e1.png"></label>
+    <input class="fht7" type="text" id="lemail" name="lemail" placeholder="Lab Email..">
+		<br><br>
+    <input class="fo7" type="submit" value="Submit">  <input class="fo7" type="submit" value="Update"> <input class="fo7" type="submit" value="Delete">
+  <input class="fo7"  type="Reset" value="Reset">
+                    </ul>
+                </form>
+            </div>
+            
+            <div id="register" class="form-action hide">
+             
+                <form>
+                    <ul>
+<br>
+<label for="tname"><img src="tname.png"></label>
+    <input class="fht8" type="text" id="tname" name="tname" placeholder="Test Name..">
+<br>
+   <label for="ttype"><img src="tty.png"></label>
+    <input class="fht8" type="text" id="ttype" name="ttype" placeholder="Test Type..">
+<br>
+   <label for="descrption"><img src="td.png"></label>
+    <input class="fht8" type="text" id="descrption" name="descrption" placeholder="Test Descrption..">
+		<br>
+		  <label for="price"><img src="coins.png"></label>
+    <input class="fht8" type="text" id="price" name="price" placeholder="Test Price..">
+		<br><br>
+    <input class="fo8" type="submit" value="Submit">  <input class="fo8" type="submit" value="Update"> <input class="fo8" type="submit" value="Delete">
+  <input class="fo8" type="Reset" value="Reset">
+                    </ul>
+                </form>
+            </div>
+          
+            <div id="reset" class="form-action hide">
+                
+                <form>
+                    <ul>
+                       <label for="Bname"><img src="bnt.png"></label>
+    <input class="fht9" type="text" id="Bname" name="Bname" placeholder="Branch Name..">
+			<label  for="BId"><img src="bidt.png"></label>
+    <input class="fht9" type="text" id="BId" name="BId" placeholder="Branch ID..">
+		<br>
+   <label for="Baddress"><img src="bat.png"></label>
+    <input class="fht9" type="text" id="BnaBaddressme" name="Baddress" placeholder="Branch Address..">
+			<label for="Barea"><img src="looo.png"></label>
+    <input class="fht9" type="text" id="Barea" name="Barea" placeholder="Branch Area..">
+<br>
+   <label for="Working Hours"><img src="wh1.png"></label>
+    <input class="fht9" type="text" id="Working Hours" name="Working Hours" placeholder="Working Hours..">
+		
+   <label for="working Days"><img src="wd1.png"></label>
+    <input class="fht9" type="text" id="working Days" name="working Days" placeholder="working Days..">
+		
+		<br><br>
+    <input class="fo9" type="submit" value="Submit">  <input class="fo9" type="submit" value="Update"> <input class="fo9" type="submit" value="Delete">
+  <input class="fo9" type="Reset" value="Reset">
+                    </ul></form></div> </div></div> </div></div></div></div>
+  <span class="s4" style="font-size:30px; cursor:pointer; color:#00FFFF; " onclick="openNav4();"> <img src ="tes.png" height="150" width="150"></span>
+
+
+
+
+<div class="container2">
+<div id="myNav5" class="overlay5">
+    <a href="javascript:void(0)" class="closebtn5" onclick="closeNav5()"><img src="cancel.png" height="60" width="60"></a>
+  <div class="overlay-content5">
+  <div class="set5"> 
+<div class="form-wrap">
+		<div class="tabs">
+			<h3 class="signup-tab"><a class="active" href="#signup-tab-content">Basic Labs Information</a></h3>
+			<h3 class="login-tab"><a href="#login-tab-content">Branches List</a></h3>
+		</div><!--.tabs-->
+
+		<div class="tabs-content">
+			<div id="signup-tab-content" class="active">
+				<form class="signup-form" action="" method="post">
+ <br>
+    <label for="rlname"><img src="rl1.png"></label>
+    <input  class="fht10" type="text" id="rlname " name="rlname" placeholder="Radiology Laboratory Name..">
+		
+	
+		  <br>
+         <label for="rlhotline"><img src="h1.png"></label>
+    <input class="fht10" type="text" id="rlhotline" name="rlhotline" placeholder="Radiology Laboratory Telephone..">
+
+
+<label for="rlemail"><img src="e1.png"></label>
+    <input class="fht10" type="text" id="rlemail" name="rlemail" placeholder="Radiology Laboratory Email..">
+		<br><br>
+    <input class="fo10" type="submit" value="Submit">  <input class="fo10" type="submit" value="Update"> <input class="fo10" type="submit" value="Delete">
+  <input class="fo10" type="Reset" value="Reset">
+				</form><!--.login-form-->
+				
+			</div><!--.signup-tab-content-->
+
+			<div id="login-tab-content">
+				<form class="login-form" action="" method="post">
+<br>
+ <label for="Bname"><img src="bns.png"></label>
+    <input class="fht11"  type="text" id="Bname " name="Bname" placeholder="Branch Name..">
+		  
+			<label for="BId"><img src="i1.png"></label>
+    <input class="fht11" type="text" id="BId" name="BId" placeholder="Branch ID..">
+		<br>
+		 <label for="Baddress"><img src="bas.png"></label>
+    <input class="fht11" type="text" id="Baddress " name="Baddress" placeholder="Branch Address..">
+			<label for="Barea"><img src="looo.png"></label>
+    <input class="fht11" type="text" id="Barea" name="Barea" placeholder="Branch Area..">
+<br>
+   <label for="Working Hours"><img src="wh1.png"></label>
+    <input class="fht11" type="text" id="Working Hours" name="Working Hours" placeholder="Working Hours..">
+		
+   <label for="working Days"><img src="wd1.png"></label>
+    <input class="fht11" type="text" id="working Days" name="working Days" placeholder="working Days..">
+	
+		<br><br>
+    <input class="fo11" type="submit" value="Submit">  <input class="fo11" type="submit" value="Update"> <input class="fo11" type="submit" value="Delete">
+  <input class="fo11" type="Reset" value="Reset">
+	
+				</form><!--.login-form-->
+				
+			</div><!--.login-tab-content-->
+		</div><!--.tabs-content-->
+	</div><!--.form-wrap-->
+</div>
+
+
+</div></div></div></div>
+  <span class="s5" style="font-size:30px; cursor:pointer; color:#00FFFF; " onclick="openNav5();"> <img src ="ray.png" height="150" width="150"></span>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<script>
+function openNav() {
+    document.getElementById("myNav").style.height = "100%";
+}
+
+function closeNav() {
+    document.getElementById("myNav").style.height = "0%";
+}
+</script>
+
+<script>
+function openNav1() {
+    document.getElementById("myNav1").style.height = "100%";
+}
+
+function closeNav1() {
+    document.getElementById("myNav1").style.height = "0%";
+}
+</script>
+
+<script>
+function openNav2() {
+    document.getElementById("myNav2").style.height = "100%";
+}
+
+function closeNav2() {
+    document.getElementById("myNav2").style.height = "0%";
+}
+</script>
+
+<script>
+function openNav3() {
+    document.getElementById("myNav3").style.height = "100%";
+}
+
+function closeNav3() {
+    document.getElementById("myNav3").style.height = "0%";
+}
+</script>
+<script>
+function openNav4() {
+    document.getElementById("myNav4").style.height = "100%";
+}
+
+function closeNav4() {
+    document.getElementById("myNav4").style.height = "0%";
+}
+</script>
+
+<script>
+$("html").mousemove(function(e) {
+  
+  var deg = (e.pageY/10)+240;
+  var rotation = 'rotateX(' + deg + 'deg)'; 
+  var rotate = {
+      '-webkit-transform' : rotation,
+      '-moz-perspective' : rotation,
+      '-ms-perspective' : rotation,
+      'perspective' : rotation
+    }
+  $("#shadow").css(rotate);
+      
+      
+  var perspective = (e.pageX/2) + 25;
+  var perspective = {
+      '-webkit-perspective' : perspective,
+      '-moz-perspective' : perspective,
+      '-ms-perspective' : perspective,
+      'perspective' : perspective
+    }
+  $("#perspective").css(perspective);
+  
+});
+</script>
+
+<script>
+function openNav5() {
+    document.getElementById("myNav5").style.height = "100%";
+}
+
+function closeNav5() {
+    document.getElementById("myNav5").style.height = "0%";
+}
+</script>
+
+<script>
+    
+    jQuery(document).ready(function($) {
+	tab = $('.tabs h3 a');
+
+	tab.on('click', function(event) {
+		event.preventDefault();
+		tab.removeClass('active');
+		$(this).addClass('active');
+
+		tab_content = $(this).attr('href');
+		$('div[id$="tab-content"]').removeClass('active');
+		$(tab_content).addClass('active');
+	});
+});
+</script>
+
+<script>
+	
+	 $(function() {
+  // constants
+  var SHOW_CLASS = 'show',
+      HIDE_CLASS = 'hide',
+      ACTIVE_CLASS = 'active';
+  
+  $( '.tabs1' ).on( 'click', 'li a', function(e){
+    e.preventDefault();
+    var $tab = $( this ),
+         href = $tab.attr( 'href' );
+  
+     $( '.active' ).removeClass( ACTIVE_CLASS );
+     $tab.addClass( ACTIVE_CLASS );
+  
+     $( '.show' )
+        .removeClass( SHOW_CLASS )
+        .addClass( HIDE_CLASS )
+        .hide();
+    
+      $(href)
+        .removeClass( HIDE_CLASS )
+        .addClass( SHOW_CLASS )
+        .hide()
+        .fadeIn( 550 );
+  });
+});
+</script>
+<script>
+	 $('.form').find('input, textarea').on('keyup blur focus', function (e) {
+  
+  var $this = $(this),
+      label = $this.prev('label');
+
+	  if (e.type === 'keyup') {
+			if ($this.val() === '') {
+          label.removeClass('active highlight');
+        } else {
+          label.addClass('active highlight');
+        }
+    } else if (e.type === 'blur') {
+    	if( $this.val() === '' ) {
+    		label.removeClass('active highlight'); 
+			} else {
+		    label.removeClass('highlight');   
+			}   
+    } else if (e.type === 'focus') {
+      
+      if( $this.val() === '' ) {
+    		label.removeClass('highlight'); 
+			} 
+      else if( $this.val() !== '' ) {
+		    label.addClass('highlight');
+			}
+    }
+
+});
+
+$('.tab a').on('click', function (e) {
+  
+  e.preventDefault();
+  
+  $(this).parent().addClass('active');
+  $(this).parent().siblings().removeClass('active');
+  
+  target = $(this).attr('href');
+
+  $('.tab-content > div').not(target).hide();
+  
+  $(target).fadeIn(600);
+  
+});
+</script>
+
+
+<script>
+ $('#form').find('input, textarea').on('keyup blur focus', function (e) {
+  
+  var $this = $(this),
+      label = $this.prev('label');
+
+	  if (e.type === 'keyup') {
+			if ($this.val() === '') {
+          label.removeClass('active highlight');
+        } else {
+          label.addClass('active highlight');
+        }
+    } else if (e.type === 'blur') {
+    	if( $this.val() === '' ) {
+    		label.removeClass('active highlight'); 
+			} else {
+		    label.removeClass('highlight');   
+			}   
+    } else if (e.type === 'focus') {
+      
+      if( $this.val() === '' ) {
+    		label.removeClass('highlight'); 
+			} 
+      else if( $this.val() !== '' ) {
+		    label.addClass('highlight');
+			}
+    }
+
+});
+
+$('.tab a').on('click', function (e) {
+  
+  e.preventDefault();
+  
+  $(this).parent().addClass('active');
+  $(this).parent().siblings().removeClass('active');
+  
+  target = $(this).attr('href');
+
+  $('.tab-content > div').not(target).hide();
+  
+  $(target).fadeIn(800);
+  
+});
+</script>
+
+<script>
+var app = angular.module('login', []);
+
+
+app.controller('loginCtrl',function($scope,$timeout){
+
+	var user = {
+		'login': 'admin',
+		'pwd': 'admin'
+	};
+	
+	$scope.ui = {
+		'shake' :false
+	};
+	
+	$scope.loginaction = function(){
+		if($scope.login == user.login && $scope.pwd == user.pwd){
+			$scope.alert = {
+				type: 'good',
+				message: 'Welcome ! Your are logged ' + user.login
+			};
+			console.log($scope.alert);
+		}
+		else{
+
+			$scope.ui.shake = true;
+			console.log($scope.alert);
+		}
+	 $scope.$watch( $scope.ui.shake  ,function(newValue, oldValue){
+		  if($scope.ui.shake == true){
+				$timeout(function(){
+					$scope.ui.shake = false;
+				}, 1000);
+			}
+	 	});
+	};
+
+
+});
+</script>
+
+1
+2
+3
+4
+5
+<script type="text/javascript">
+document.getElementById("uploadBtn").onchange = function () {
+document.getElementById("uploadFile").value = this.value;
+};
+</script>
